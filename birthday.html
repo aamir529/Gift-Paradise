@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Gifts - Gift Paradise</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container header-main">
+            <div class="logo">
+                <a href="index.html">Gift <span>Paradise</span></a>
+            </div>
+            
+            <div class="search-cart">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search birthday gifts...">
+                    <i class="fas fa-search"></i>
+                </div>
+                
+                <div class="header-icons">
+                    <div class="icon-btn" id="loginBtn"><i class="far fa-user"></i></div>
+                    <div class="icon-btn cart-icon"><i class="fas fa-shopping-bag"></i><span class="cart-count">0</span></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="category-header">
+        <div class="container">
+            <h1>Birthday Gifts</h1>
+            <p>Celebrate another year of joy with personalized cakes, jewelry, and delightful hampers</p>
+            <a href="index.html" class="back-button"><i class="fas fa-arrow-left"></i> Return to Home</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <!-- Interactive Filter -->
+        <div class="subcategories">
+            <button class="subcategory-btn active" data-filter="all">All Gifts</button>
+            <button class="subcategory-btn" data-filter="under-500">Under ₹500</button>
+            <button class="subcategory-btn" data-filter="luxury">Premium (₹500+)</button>
+            <button class="subcategory-btn" data-filter="personalized">Personalized</button>
+        </div>
+        
+        <div class="products">
+            <div class="product">
+                <span class="product-badge">Bestseller</span>
+                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=500&q=80" alt="Birthday Necklace">
+                </div>
+                <div class="product-info">
+                    <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span>(142)</span></div>
+                    <h3 class="product-title">Personalized Birthday Zodiac Necklace</h3>
+                    <div class="product-price">₹899</div>
+                    <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" alt="Birthday Mug">
+                </div>
+                <div class="product-info">
+                    <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> <span>(68)</span></div>
+                    <h3 class="product-title">Birthday Milestone Custom Photo Mug</h3>
+                    <div class="product-price">₹399</div>
+                    <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1559454403-b8fb88521f11?auto=format&fit=crop&w=500&q=80" alt="Teddy Bear">
+                </div>
+                <div class="product-info">
+                    <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span>(92)</span></div>
+                    <h3 class="product-title">Plush Huggable Birthday Teddy Bear</h3>
+                    <div class="product-price">₹549</div>
+                    <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=500&q=80" alt="Cake Candle">
+                </div>
+                <div class="product-info">
+                    <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>(41)</span></div>
+                    <h3 class="product-title">Vanilla Cupcake Scented Candle</h3>
+                    <div class="product-price">₹429</div>
+                    <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal hidden" id="loginModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-tabs">
+                <div class="modal-tab active">Sign In</div>
+                <div class="modal-tab">Register</div>
+            </div>
+            <form onsubmit="event.preventDefault(); showToast('Signed in successfully!'); document.getElementById('loginModal').classList.add('hidden');">
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn" style="width:100%">Continue</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

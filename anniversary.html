@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary Gifts - Gift Paradise</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-main">
+            <div class="logo">
+                <a href="index.html">Gift <span>Paradise</span></a>
+            </div>
+            
+            <div class="search-cart">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search anniversary gifts...">
+                    <i class="fas fa-search"></i>
+                </div>
+                
+                <div class="header-icons">
+                    <div class="icon-btn" id="loginBtn"><i class="far fa-user"></i></div>
+                    <div class="icon-btn cart-icon"><i class="fas fa-shopping-bag"></i><span class="cart-count">0</span></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="category-header">
+        <div class="container">
+            <h1>Anniversary Gifts</h1>
+            <p>Celebrate eternal romance with handcrafted keepsakes and custom couple gifts</p>
+            <a href="index.html" class="back-button"><i class="fas fa-arrow-left"></i> Return to Home</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="subcategories">
+            <button class="subcategory-btn active" data-filter="all">All Gifts</button>
+            <button class="subcategory-btn" data-filter="under-500">Under ₹500</button>
+            <button class="subcategory-btn" data-filter="luxury">Premium (₹500+)</button>
+            <button class="subcategory-btn" data-filter="personalized">Personalized</button>
+        </div>
+        
+        <div class="products">
+            <div class="product">
+                <span class="product-badge">Romantic</span>
+                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=500&q=80" alt="Frame">
+                </div>
+                <div class="product-info">
+                    <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span>(110)</span></div>
+                    <h3 class="product-title">Personalized Oakwood Couple Photo Frame</h3>
+                    <div class="product-price">₹749</div>
+                    <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=500&q=80" alt="Rings">
+                </div>
+                <div class="product-info">
+                    <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>(87)</span></div>
+                    <h3 class="product-title">Engraved Sterling Silver Promise Rings</h3>
+                    <div class="product-price">₹1299</div>
+                    <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1544376664-80b17f09d399?auto=format&fit=crop&w=500&q=80" alt="Wine Set">
+                </div>
+                <div class="product-info">
+                    <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span>(54)</span></div>
+                    <h3 class="product-title">Luxury Couple Crystal Wine Glasses Set</h3>
+                    <div class="product-price">₹1499</div>
+                    <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=500&q=80" alt="Bottle">
+                </div>
+                <div class="product-info">
+                    <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> <span>(29)</span></div>
+                    <h3 class="product-title">Vintage Message in a Glass Bottle</h3>
+                    <div class="product-price">₹349</div>
+                    <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal hidden" id="loginModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-tabs">
+                <div class="modal-tab active">Sign In</div>
+                <div class="modal-tab">Register</div>
+            </div>
+            <form onsubmit="event.preventDefault(); showToast('Signed in successfully!'); document.getElementById('loginModal').classList.add('hidden');">
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn" style="width:100%">Continue</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

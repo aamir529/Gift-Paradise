@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Paradise - Curated Gifts For Every Moment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <header>
+        <div class="container header-main">
+            <div class="logo">
+                <a href="index.html">Gift <span>Paradise</span></a>
+            </div>
+            
+            <div class="search-cart">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search handcrafted gifts...">
+                    <i class="fas fa-search" id="searchBtn"></i>
+                </div>
+                
+                <div class="header-icons">
+                    <div class="icon-btn" id="loginBtn" title="Account">
+                        <i class="far fa-user"></i>
+                    </div>
+
+                    <div class="icon-btn cart-icon" title="View Cart">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+
+                    <div class="mobile-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav>
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Occasions <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="birthday.html">Birthday</a>
+                            <a href="anniversary.html">Anniversary</a>
+                            <a href="wedding.html">Wedding</a>
+                            <a href="christmas.html">Christmas</a>
+                        </div>
+                    </li>
+                    <li><a href="birthday.html">Best Sellers</a></li>
+                    <li><a href="anniversary.html">Personalized</a></li>
+                    <li><a href="wedding.html">Luxury Sets</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero-content">
+            <span class="hero-tag">Handcrafted With Love</span>
+            <h1>Thoughtful Gifts for <span>Unforgettable</span> Memories</h1>
+            <p>Explore thousands of bespoke, personalized, and luxury gifts hand-curated for every memorable occasion.</p>
+            <a href="birthday.html" class="btn"><i class="fas fa-gift"></i> Explore Catalog</a>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <div class="container">
+        <div class="features-grid">
+            <div class="feature-item">
+                <i class="fas fa-truck-fast"></i>
+                <h4>Express Delivery</h4>
+                <p>Same day delivery across 50+ cities</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-wand-magic-sparkles"></i>
+                <h4>Custom Engraving</h4>
+                <p>Personalize with names and photos</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-shield-heart"></i>
+                <h4>Premium Quality</h4>
+                <p>100% curated and quality verified</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-gift"></i>
+                <h4>Luxury Gift Wrap</h4>
+                <p>Free aesthetic packaging on all orders</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Products -->
+    <section class="container">
+        <div class="section-title">
+            <h2>Trending Gifts</h2>
+            <p>Our most cherished items this week</p>
+        </div>
+        
+        <div class="products">
+            <div class="product">
+                <span class="product-badge">Popular</span>
+                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=500&q=80" alt="Personalized Name Necklace">
+                </div>
+                <div class="product-info">
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        <span>(128)</span>
+                    </div>
+                    <h3 class="product-title">Personalized 18K Gold Plated Necklace</h3>
+                    <div class="product-price">₹899</div>
+                    <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=500&q=80" alt="Scented Candle">
+                </div>
+                <div class="product-info">
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span>(84)</span>
+                    </div>
+                    <h3 class="product-title">Organic French Lavender Soy Candle</h3>
+                    <div class="product-price">₹449</div>
+                    <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <span class="product-badge">Hot</span>
+                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" alt="Custom Mug">
+                </div>
+                <div class="product-info">
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                        <span>(95)</span>
+                    </div>
+                    <h3 class="product-title">Custom Ceramic Photo Magic Mug</h3>
+                    <div class="product-price">₹349</div>
+                    <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1559454403-b8fb88521f11?auto=format&fit=crop&w=500&q=80" alt="Teddy Bear">
+                </div>
+                <div class="product-info">
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span>(210)</span>
+                    </div>
+                    <h3 class="product-title">Plush Velvet Cuddle Teddy Bear</h3>
+                    <div class="product-price">₹599</div>
+                    <button class="add-to-cart"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="container">
+        <div class="section-title">
+            <h2>Shop By Occasion</h2>
+            <p>Hand-picked assortments tailored for life's milestones</p>
+        </div>
+        
+        <div class="categories">
+            <a href="birthday.html" class="category">
+                <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=600&q=80" alt="Birthday Gifts">
+                <div class="category-overlay">
+                    <h3>Birthday</h3>
+                    <span>Cakes, hampers & personalized tokens &rarr;</span>
+                </div>
+            </a>
+            
+            <a href="anniversary.html" class="category">
+                <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=600&q=80" alt="Anniversary Gifts">
+                <div class="category-overlay">
+                    <h3>Anniversary</h3>
+                    <span>Romantic sculptures, jewelry & memories &rarr;</span>
+                </div>
+            </a>
+            
+            <a href="wedding.html" class="category">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80" alt="Wedding Gifts">
+                <div class="category-overlay">
+                    <h3>Wedding</h3>
+                    <span>Champagne flutes, robes & luxury keepsakes &rarr;</span>
+                </div>
+            </a>
+            
+            <a href="christmas.html" class="category">
+                <img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?auto=format&fit=crop&w=600&q=80" alt="Christmas Gifts">
+                <div class="category-overlay">
+                    <h3>Christmas</h3>
+                    <span>Festive hampers, decor & winter warmth &rarr;</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <div class="container">
+        <section class="newsletter">
+            <h2>Get 15% Off Your First Gift</h2>
+            <p>Join our newsletter club for secret seasonal sales, custom gift ideas & special holiday discounts.</p>
+            
+            <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Subscribed successfully!');">
+                <input type="email" placeholder="Enter your email address..." required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal hidden" id="loginModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-tabs">
+                <div class="modal-tab active">Sign In</div>
+                <div class="modal-tab">Register</div>
+            </div>
+            <form onsubmit="event.preventDefault(); showToast('Signed in successfully!'); document.getElementById('loginModal').classList.add('hidden');">
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn" style="width:100%">Continue</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo" style="margin-bottom:15px;">
+                        <a href="#" style="color:#fff">Gift <span style="color:var(--primary)">Paradise</span></a>
+                    </div>
+                    <p>Dedicated to delivering warmth, smiles, and heartfelt memories across thousands of homes worldwide since 2010.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Explore Occasions</h3>
+                    <ul>
+                        <li><a href="birthday.html">Birthday Gifts</a></li>
+                        <li><a href="anniversary.html">Anniversary Gifts</a></li>
+                        <li><a href="wedding.html">Wedding Gifts</a></li>
+                        <li><a href="christmas.html">Christmas Specials</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Customer Care</h3>
+                    <ul>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Refunds & Returns</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 124 Blossom Lane, New Delhi, India</li>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-envelope"></i> support@giftparadise.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 Gift Paradise. All Rights Reserved. Crafted with care.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
